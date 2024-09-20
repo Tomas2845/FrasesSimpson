@@ -11,12 +11,13 @@ function App() {
     consultarAPI();
   }, []);
 
-  const consultarAPI = () => {
+  const consultarAPI = async() => {
     // fecha api
-    // solicitud GET(post, put, patch, delete)
+    // solicitud GET(post, put, patch, delete) para traer datos y personajes de la API 
 
-    const respuesta =  fetch ('https://thesimpsonsquoteapi.glitch.me/quotes');
-    console.log(respuesta);
+    const respuesta = await fetch ('https://thesimpsonsquoteapi.glitch.me/quotes');
+    const datos =  await respuesta.json()
+    console.log(datos);
   };
 
   return (
