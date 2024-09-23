@@ -32,7 +32,7 @@ const [personaje, setPersonaje] = useState({})
       <Container className="text-center my-4">
         <img src={logo} alt="" className="w-50" />
         <Frases personaje={personaje}></Frases>
-        <Button variant="warning" className="mt-3 ">
+        <Button variant="warning" className="mt-3 " onClick={consultarAPI}>
           Obtener Frase
         </Button>
       </Container>
