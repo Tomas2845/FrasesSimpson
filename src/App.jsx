@@ -18,6 +18,8 @@ function App() {
     const respuesta = await fetch ('https://thesimpsonsquoteapi.glitch.me/quotes');
     const datos =  await respuesta.json()
     console.log(datos);
+    
+    
   };
 
   return (

@@ -1,7 +1,7 @@
 import { Card } from "react-bootstrap";
 
 
-const Frases = () => {
+const Frases = ({}) => {
 
   return (
     <section>
